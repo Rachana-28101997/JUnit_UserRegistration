@@ -32,7 +32,7 @@ public class FirstNameTest {
 	@Test
 	public void testFirstNameWithoutFirstLetterCapital_testAssertionSad() {
 		boolean result = user.firstName("rachana");
-		Assert.assertTrue(result);
+		Assert.assertFalse(result);
 	}
 	
 	
