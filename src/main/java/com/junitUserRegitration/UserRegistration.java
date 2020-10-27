@@ -6,4 +6,8 @@ public class UserRegistration {
 		boolean fname = Pattern.matches("^[A-Z]([a-z]{2,})$", firstName);
 		return fname;
 }
+	public boolean lastName(String lastName) {
+		boolean lname = Pattern.matches("^[A-Z]([a-z]{2,})$", lastName);
+		return lname;
+}
 }
