@@ -7,5 +7,16 @@ public class UserRegistration {
 			boolean fname = Pattern.matches("^[A-Z]([a-z]{2,})$", firstName);
 			return fname;
 	}
-
+		public boolean lastName(String lastName) {
+			boolean lname = Pattern.matches("^[A-Z]([a-z]{2,})$", lastName);
+			return lname;
+	}
+		public  boolean email(String mail) {
+			boolean email = Pattern.matches("^[A-Za-z0-9]+([._%+-][0-9a-zA-Z]+)*@[A-Za-z0-9]+([.]([a-zA-Z]{2,3})*)+$", mail);
+			return email;
+		}
+		public  boolean mobileNum(String mNum) {
+			boolean mobileNum = Pattern.matches("^(\\+\\d{2()?)?((\\(\\d{3}\\))|\\d{3})[- .]?\\d{3}[- .]?\\d{4}$", mNum);
+			return mobileNum;
+		}
 }
